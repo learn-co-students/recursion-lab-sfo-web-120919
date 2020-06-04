@@ -62,6 +62,16 @@ function addUpTo(nums, index) {
     }
   };
 
+  function includesNumber(nums, num) {
+    //console.log("nums", nums)
+    if (nums.length === 1) {
+       return nums[0] === num
+    } else {
+       if (nums[0] === num) return true
+       return includesNumber(nums.slice(1), num)
+    }
+}
+
 
 
 
