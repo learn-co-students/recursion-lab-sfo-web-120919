@@ -35,3 +35,24 @@ function isPalindrome(str) {
     return true
 
 }
+
+
+function addUpTo(nums, index) {
+
+    console.log("nums", nums[index])
+    if (index === 0) {
+          return nums[index]
+    } else {
+
+      let value = addUpTo(nums, index - 1)
+      
+      return nums[index] + value 
+
+    }
+}
+
+
+
+
+
+
